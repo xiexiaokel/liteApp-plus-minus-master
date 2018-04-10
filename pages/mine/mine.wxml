@@ -1,0 +1,5 @@
+<!--pages/mine/mine.wxml-->
+<view class="container">
+  <text>111111</text>
+  <botNav page="mine"></botNav>
+</view>

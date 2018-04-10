@@ -1,0 +1,13 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/fighting/fighting",
+    "pages/mine/mine"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#4b2ec8",
+    "navigationBarTitleText": "加减大师",
+    "navigationBarTextStyle": "light"
+  }
+}

@@ -1,0 +1,23 @@
+/* components/tabBar/tabBar.wxss */
+@import '../../app.wxss';
+.tab-bar{
+  height:62rpx;
+  border-radius:10rpx;
+  border:3rpx #9f6ae9 solid;
+  display: flex;
+  flex-flow: row nowrap;
+  background:#fdfbfe;
+  justify-content: space-between;
+  overflow:hidden;
+}
+.tab-item{
+  display: flex;
+  flex:1;
+  justify-content: center;
+  align-items: center;
+  color:#9f6ae9;
+}
+.actived{
+  background:#9f6ae9;
+  color:#fff;
+}

@@ -1,0 +1,87 @@
+/**app.wxss**/
+page{
+  background:#fff;
+  height:100%;
+}
+.container {
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  background:rgba(182,146,217,0.12);
+} 
+/* 背景色 */
+.bg-white{
+  background:#fff;
+}
+/* 字号 */
+.ft15{
+  font-size:15rpx;
+}
+.ft18{
+  font-size:18rpx;
+}
+.ft20{
+  font-size:20rpx;
+}
+.ft22{
+  font-size:22rpx;
+}
+.ft24{
+  font-size:24rpx;
+}
+.ft26{
+  font-size:26rpx;
+}
+.ft28{
+  font-size:28rpx;
+}
+.ft30{
+  font-size:30rpx;
+}
+.ft32{
+  font-size:32rpx;
+}
+.ft36{
+  font-size:36rpx;
+}
+.ft38{
+  font-size:38rpx;
+}
+.ft40{
+  font-size:40rpx;
+}
+/* 字体颜色 */
+.textWhite{
+  color:#fff;
+}
+.textOrange{
+  color:#feb04c;
+}
+.textGray{
+  color:#919191;
+}
+.textLightBlack{
+  color:#484848;
+}
+.textBlack{
+  color:#303032;
+}
+.textPink{
+  color:#9f6ae9;
+}
+/* 字体加粗 */
+.bold{
+  font-weight:bold;
+}
+/* 下边距 */
+.pdbot{
+  padding-bottom:95rpx;
+}
+.pd-all{
+  padding:34rpx;
+}
+.radius-box{
+  border-radius: 10rpx;
+}

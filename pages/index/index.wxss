@@ -1,0 +1,51 @@
+/**index.wxss**/
+.full-banner{
+  height:75%;
+  padding-top:40rpx;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  background: linear-gradient(to bottom, #4b2ec8, #ba7df3);
+}
+.img-btn{
+  width:602rpx;
+  height:155rpx;
+}
+.img-title{
+  width:501rpx;
+  height:229rpx;
+  margin-top:60rpx;
+}
+.fight-num{
+  margin:15rpx 0;
+}
+.fight-btn{
+  width:614rpx;
+  height:114rpx;
+  margin:40rpx 0rpx;
+  border-radius: 57rpx;
+  border:6rpx #ffe84c solid;
+  font-size:52rpx;
+  line-height:100rpx;
+  padding:0;
+  background: linear-gradient(to right, #f98c7d, #f92a82);
+}
+.invited{
+  width:614rpx;
+  height:100rpx;
+  border-radius: 50rpx;
+  background:rgba(213,199,255,0.35);
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items:center;
+}
+.img-invited{
+  width:68rpx;
+  height:55rpx;
+  margin-right:10rpx;
+}
+.top{
+  height:100%;
+}

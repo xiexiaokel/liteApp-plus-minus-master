@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "botNav": "../../components/botNav/botNav",
+    "tabBar":"../../components/tabBar/tabBar"
+  }
+}

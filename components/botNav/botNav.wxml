@@ -1,0 +1,12 @@
+<view class="mainNav">
+  <block wx:for="{{tabList}}" wx:key="{{item.id}}">
+    <view class="tab-item" wx:if="{{item.isChecked}}" bindtap="selectItem" data-id="{{item.id}}">
+        <image src="{{item.imgSelected}}" class="tab-icon"></image>
+        <text class="ft20 textPink">{{item.text}}</text>
+    </view>
+    <view class="tab-item" wx:else bindtap="selectItem" data-id="{{item.id}}">
+      <image src="{{item.imgUrl}}" class="tab-icon"></image>
+      <text class="ft20 textGray">{{item.text}}</text>
+    </view>
+  </block>
+</view>

@@ -1,0 +1,4 @@
+<view class="container">
+  <text>fighting</text>
+  <botNav page="fighting"></botNav>
+</view>
