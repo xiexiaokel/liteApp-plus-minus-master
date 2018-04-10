@@ -1,1 +1,42 @@
 /* pages/fighting/fighting.wxss */
+.fight-container{
+ background-color:#38353a; 
+ height:100%;
+ position: relative;
+ z-index: 8;
+}
+.fight-container:before{
+  display:block;
+  content: '';
+  width:100%;
+  height:950rpx;
+  position: absolute;
+  background:#764cae;
+  border-bottom-left-radius: 40rpx;
+  border-bottom-right-radius: 40rpx;
+  z-index: 9;
+}
+.fight-container:after{
+  display:block;
+  content: '';
+  width:100%;
+  height:935rpx;
+  position: absolute;
+  background: linear-gradient(to bottom, #4b2ec8, #ba7df3);
+  z-index: 10;
+  border-bottom-left-radius: 40rpx;
+  border-bottom-right-radius: 40rpx;
+}
+.cut-time{
+  position: absolute;
+  left:0;
+  top:0;
+  right:0;
+  height:835rpx;
+  z-index: 11;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:#fff;
+  font-size:280rpx;
+}

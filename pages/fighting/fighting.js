@@ -5,7 +5,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+    animationData:{},
+    count:3,
   },
 
   /**
@@ -19,7 +20,13 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-  
+    const {count} = this.data;
+    if(count==0) return;
+    setTimeout(()=>{
+      this.setData({
+        count:count-1
+      })
+    },1000)
   },
 
   /**

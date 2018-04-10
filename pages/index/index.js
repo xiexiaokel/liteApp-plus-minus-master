@@ -9,9 +9,11 @@ Page({
     imgTitle:`${imgHost}/images/title.png`,
     imgInvited:`${imgHost}/images/wx_icon.png`,
     imgAdv:`${imgHost}/images/adv.png`,
+    popHead:`${imgHost}/images/pop_head.png`,
     fight_num: 375988,
     tabShow:2,
-    showModal:false//控制弹窗显示隐藏
+    showModal:false,//控制大弹窗显示隐藏
+    showPop:false//控制开始按钮小弹窗显示
   },
   onLoad: function () {
     
@@ -23,7 +25,10 @@ Page({
     })
   },
   fightStart: function () {
-   console.log('开始挑战')
+   console.log('开始挑战');
+   this.setData({
+     showPop:true
+   })
   },
   invitedFriend:function(){
     console.log('邀请朋友事件方法')
@@ -54,5 +59,8 @@ Page({
   },
   gotoPrize:function(){
     console.log('立即领奖');
+  },
+  relationClick:function(){
+    console.log('立即联系');
   }
 })

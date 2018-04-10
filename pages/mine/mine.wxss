@@ -1,1 +1,120 @@
 /* pages/mine/mine.wxss */
+
+.mine{
+  height:650rpx;
+  background: linear-gradient(to bottom, #4b2ec8, #ba7df3);
+}
+.head-pic{
+  width:180rpx;
+  height:180rpx;
+  overflow: hidden;
+  border-radius: 90rpx;
+  margin-bottom:25rpx;
+}
+.mine-info{
+  position: relative;
+  width:100%;
+  margin:35rpx 0;
+}
+.complaint-btn{
+  position: absolute;
+  right:0;
+  top:50%;
+  margin-top:-70rpx;
+  height:70rpx;
+  width:140rpx;
+  border-top-left-radius: 35rpx;
+  border-bottom-left-radius: 35rpx;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  background:#b19aff;
+  padding-left:10rpx;
+}
+.cpt-icon{
+  width:31rpx;
+  height:36rpx;
+  margin-right:10rpx;
+}
+.fight-record{
+  width:100%;
+  margin:40rpx 0;
+}
+.record-item{
+  flex:1;
+}
+.bottom{
+  align-items: baseline;
+}
+.btn-group{
+  height:80rpx;
+  width:100%;
+}
+.btn-item{
+  width:310rpx;
+  height:80rpx;
+  border-radius: 40rpx;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.wx-icon{
+  width:47rpx;
+  height:38rpx;
+  margin-right:15rpx;
+}
+.fight-icon{
+  width:34rpx;
+  height:34rpx;
+  margin-right:15rpx;
+}
+.online{
+  height:90rpx;
+  background:#22ac38;
+  border-radius: 45rpx;
+  margin:35rpx;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.online-icon{
+  width:62rpx;
+  height:52rpx;
+  margin-right:10rpx;
+}
+.qa-list{
+  padding:0 35rpx;
+  padding-bottom:126rpx;
+}
+.qa-item,.item-left{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.qa-item{
+  padding:15rpx 0;
+  border-bottom:1rpx #eaeaea solid;
+}
+.qa-pic{
+  width:130rpx;
+  height:130rpx;
+  margin-right:25rpx;
+}
+.item-txt{
+  display: flex;
+  flex-flow: column;
+  line-height: 50rpx;
+}
+.item-btn{
+  background:#7e62f8;
+  font-size:28rpx;
+  color:#fff;
+  border-radius: 40rpx;
+  height:80rpx;
+  line-height: 80rpx;
+  margin:0;
+}

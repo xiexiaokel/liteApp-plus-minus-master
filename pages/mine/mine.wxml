@@ -1,5 +1,78 @@
 <!--pages/mine/mine.wxml-->
-<view class="container">
-  <text>111111</text>
+<scroll-view class="container" scroll-y>
+  <!-- 有背景区域 -->
+  <view class="mine flex flex-col flex-center flex-start">
+    <view class="mine-info flex flex-col flex-center">
+      <image src="{{headPic}}" class="head-pic"></image>
+      <text class="ft36 textWhite">{{nickName}} 可领取娃娃{{prizeNum}}个</text>
+      <view class="complaint-btn" bindtap="complanitClick">
+        <image src="{{complanitIcon}}" class="cpt-icon"></image>
+        <text class="ft30 textWhite">投诉</text>
+      </view>
+    </view>
+    <view class="fight-record flex flex-row flex-center flex-between">
+      <view class="record-item flex flex-col flex-center">
+        <view class="flex flex-row bottom">
+          <text class="ft72 textWhite">343</text>
+          <text class="ft30 textWhite">次</text>
+        </view>
+        <text class="ft30 textWhite">挑战机会</text>
+      </view>
+      <view class="record-item flex flex-col flex-center">
+        <view class="flex flex-row bottom">
+          <text class="ft72 textWhite">343</text>
+          <text class="ft30 textWhite">次</text>
+        </view>
+        <text class="ft30 textWhite">已挑战</text>
+      </view>
+      <view class="record-item flex flex-col flex-center">
+        <view class="flex flex-row bottom">
+          <text class="ft72 textWhite">343</text>
+          <text class="ft30 textWhite">分</text>
+        </view>
+        <text class="ft30 textWhite">最高分</text>
+      </view>
+    </view>
+    <!-- 按钮组 -->
+    <view class="btn-group flex flex-row flex-around">
+      <button class="btn-item">
+        <image src="{{wxIcon}}" class="wx-icon"></image>
+        <text class="ft30 textPink">炫耀战绩</text>
+      </button>
+      <button class="btn-item">
+        <image src="{{fightIcon}}" class="fight-icon"></image>
+        <text class="ft30 textPink">获得挑战机会</text>
+      </button>
+    </view>
+  </view>
+  <!-- 客服微信 -->
+  <button class="online">
+    <image src="{{onlineIcon}}" class="online-icon"></image>
+    <text class="ft36 textWhite">客服微信：{{onlineNum}}</text>
+  </button>
+  <!-- 答题列表 -->
+  <view class="qa-list">
+    <view class="qa-item">
+      <view class="item-left">
+        <image src="{{headPic}}" class="qa-pic"></image>
+        <view class="item-txt">
+          <text class="ft36 textBlack">知识答题，边玩边学</text>
+          <text class="ft28 textGray">12道选择题，答对就有奖</text>
+        </view>
+      </view>
+      <button class="item-btn">去答题</button>
+    </view>
+    <view class="qa-item">
+      <view class="item-left">
+        <image src="{{headPic}}" class="qa-pic"></image>
+        <view class="item-txt">
+          <text class="ft36 textBlack">知识答题，边玩边学</text>
+          <text class="ft28 textGray">12道选择题，答对就有奖</text>
+        </view>
+      </view>
+      <button class="item-btn">去答题</button>
+    </view>
+  </view>
+  <!-- 底部导航 -->
   <botNav page="mine"></botNav>
-</view>
+</scroll-view>

@@ -81,6 +81,12 @@ page{
 .ft40{
   font-size:40rpx;
 }
+.ft56{
+  font-size:56rpx;
+}
+.ft72{
+  font-size:72rpx;
+}
 /* 字体颜色 */
 .textWhite{
   color:#fff;

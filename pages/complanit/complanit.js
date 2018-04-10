@@ -1,31 +1,29 @@
-// pages/mine/mine.js
-const app = getApp();
-const imgHost = app.globalData.imgHost;
+// pages/complanit/complanit.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    headPic:`${imgHost}/images/head_pic.png`,
-    complanitIcon:`${imgHost}/images/complaint.png`,
-    wxIcon:`${imgHost}/images/wx_pink.png`,
-    fightIcon:`${imgHost}/images/fighting_pink.png`,
-    onlineIcon:`${imgHost}/images/online.png`,
-    nickName:'Ruby',
-    prizeNum:'55',
-    onlineNum:'yoyoyo'
+    items: [
+      { name: 'USA', value: '色情' },
+      { name: 'CHN', value: '骚扰', checked: 'true' },
+      { name: 'BRA', value: '欺诈' },
+      { name: 'JPN', value: '传播谣言' },
+      { name: 'ENG', value: '诱导' },
+      { name: 'TUR', value: '内容不符' },
+      { name: 'TUR', value: '恶意收集信息' },
+      { name: 'TUR', value: '侵权' }
+    ]
   },
-  complanitClick:function(){
-    wx.navigateTo({
-      url: '../complanit/complanit',
-    })
+  radioChange: function (e) {
+    console.log('radio发生change事件，携带value值为：', e.detail.value)
   },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+  
   },
 
   /**

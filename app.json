@@ -1,8 +1,9 @@
 {
   "pages": [
-    "pages/index/index",
     "pages/fighting/fighting",
-    "pages/mine/mine"
+    "pages/complanit/complanit",
+    "pages/mine/mine",
+    "pages/index/index"
   ],
   "window": {
     "backgroundTextStyle": "light",

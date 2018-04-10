@@ -95,10 +95,54 @@
   line-height: 61rpx;
   color:#fff;
   font-size:36rpx;
+  margin-right:10rpx;
 }
 .pink{
   background-image: url('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1523364196438&di=4a5ce5fe3b6fa2e73b09bd82e9a48b61&imgtype=0&src=http%3A%2F%2Fpic.qiantucdn.com%2F58pic%2F18%2F19%2F87%2F09f58PICBJU_1024.jpg');
 }
 .blue{
   background-image: url('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1523364196438&di=4a5ce5fe3b6fa2e73b09bd82e9a48b61&imgtype=0&src=http%3A%2F%2Fpic.qiantucdn.com%2F58pic%2F18%2F19%2F87%2F09f58PICBJU_1024.jpg');
+}
+.textRed{
+  text-align: center;
+  margin-top:10rpx;
+}
+.red-btn{
+  width:250rpx;
+  height:80rpx;
+  line-height: 80rpx;
+  border-radius: 40rpx;
+  background:#f9867d;
+  color:#fff;
+  margin-top:25rpx;
+  font-size:36rpx;
+}
+.fight-pop{
+  position: absolute;
+  left:0;
+  top:0;
+  bottom:0;
+  right:0;
+  padding:135rpx 35rpx 35rpx;
+}
+.pop-head{
+  position: absolute;
+  left:50%;
+  margin-left:-352rpx;
+  top:-50rpx;
+  width:704rpx;
+  height:178rpx;
+}
+.invited-btn{
+  border:2px #fff solid;
+  height:130rpx;
+  border-radius: 20rpx;
+  background:#f9717e;
+  box-shadow: 0rpx 5rpx 5rpx 2rpx #ccc;
+  display:flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding:0 25rpx;
+  color:#fff;
 }

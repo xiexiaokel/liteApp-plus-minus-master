@@ -1,4 +1,5 @@
-<view class="container">
-  <text>fighting</text>
-  <botNav page="fighting"></botNav>
+<view class="fight-container">
+  <view class="cut-time">
+    <text animation="{{animationData}}">{{count}}</text>
+  </view>
 </view>
