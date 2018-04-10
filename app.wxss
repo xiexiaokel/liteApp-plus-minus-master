@@ -11,6 +11,35 @@ page{
   align-items: center;
   background:rgba(182,146,217,0.12);
 } 
+/* flex布局公共样式*/
+.flex{
+  display:flex;
+}
+.flex-row{
+  flex-flow: row nowrap;
+}
+.flex-col{
+  flex-flow: column nowrap;
+}
+.flex-wrap{
+  flex-wrap: wrap;
+}
+.flex-center{
+  justify-content: center;
+  align-items: center;
+}
+.flex-start{
+  justify-content: flex-start;
+}
+.flex-end{
+  justify-content: flex-end;
+}
+.flex-between{
+  justify-content: space-between;
+}
+.flex-around{
+  justify-content: space-around;
+}
 /* 背景色 */
 .bg-white{
   background:#fff;
@@ -71,6 +100,9 @@ page{
 .textPink{
   color:#9f6ae9;
 }
+.textRed{
+  color:#f96e7e;
+}
 /* 字体加粗 */
 .bold{
   font-weight:bold;
@@ -80,7 +112,7 @@ page{
   padding-bottom:95rpx;
 }
 .pd-all{
-  padding:34rpx;
+  padding:35rpx;
 }
 .radius-box{
   border-radius: 10rpx;

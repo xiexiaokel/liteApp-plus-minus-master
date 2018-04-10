@@ -1,6 +1,9 @@
 {
   "usingComponents": {
     "botNav": "../../components/botNav/botNav",
-    "tabBar":"../../components/tabBar/tabBar"
+    "tabBar":"../../components/tabBar/tabBar",
+    "memberList":"../../components/memberList/memberList",
+    "pictureList":"../../components/pictureList/pictureList",
+    "popModal":"../../components/popModal/popModal"
   }
 }

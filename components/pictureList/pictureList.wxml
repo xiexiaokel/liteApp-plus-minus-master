@@ -1,0 +1,11 @@
+<!--components/pictureList/pictureList.wxml-->
+<view class="prize-list">
+  <view class="prize-top flex flex-row flex-center flex-between">
+    <text class="ft32 textRed">挑战成功领取娃娃</text>
+    <button class="prize-btn ft30 textWhite" bindtap="getPrize">立即领取</button>
+  </view>
+  <view class="prize-item flex flex-col flex-center" wx:for="{{prizeList}}" wx:key="{{index}}">
+    <image src="{{item.picture}}" class="prize-img"></image>
+    <text class="prize-title ft30 textBlack">{{item.text}}</text>
+  </view>
+</view>
