@@ -1,5 +1,22 @@
 <view class="fight-container">
-  <view class="cut-time">
-    <text animation="{{animationData}}">{{count}}</text>
+  <view class="fight-content">
+    <view class="flex flex-center">
+      <text class="fight-title">连续答对{{qaNumber}}题即挑战成功</text>
+    </view>
+    <view class="progress-box">
+      <view class="progress-mask" style="width:{{timeData}}%"> 
+      </view> 
+       <progress percent="{{timeData}}" activeColor='#3d1d99' backgroundColor="#3d1d99" stroke-width="24"/>
+    </view>
+    <view class="qa-content flex flex-col flex-center flex-start">
+        <text class="ft48 textWhite">第1题</text>
+        <text class="ft150 textWhite">{{currentQa.startNum}}-{{currentQa.endNum}}</text> 
+        <text class="ft150 textWhite">={{currentQa.result}}</text>
+        <image class="music-icon" src="{{musicIcon}}"></image>  
+    </view>
+    <view class="btn-group flex flex-row flex-center flex-around">
+        <image src="{{rightIcon}}" class="img-btn"></image>
+        <image src="{{wrongIcon}}" class="img-btn"></image>
+    </view>
   </view>
 </view>

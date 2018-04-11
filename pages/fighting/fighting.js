@@ -1,12 +1,24 @@
 // pages/fighting/fighting.js
+const app = getApp();
+const imgHost = app.globalData.imgHost;
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    animationData:{},
-    count:3,
+    musicIcon:`${imgHost}/images/music.png`,
+    rightIcon:`${imgHost}/images/right.png`,
+    wrongIcon: `${imgHost}/images/wrong.png`,
+    timeData:100,
+    qaNumber:'40',
+    qaList:[
+      {id:'1',startNum:'3',endNum:'5',result:'0'},
+      { id: '2', startNum: '6', endNum: '1', result: '0' },
+      { id: '3', startNum: '4', endNum: '7', result: '2' },
+      { id: '4', startNum: '3', endNum: '2', result: '4' }
+    ],
+    currentQa:{}
   },
 
   /**
@@ -20,27 +32,38 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-    const {count} = this.data;
-    if(count==0) return;
-    setTimeout(()=>{
-      this.setData({
-        count:count-1
-      })
-    },1000)
+    const {qaList} = this.data;
+    this.setData({
+      currentQa:qaList[0]
+    })
   },
 
   /**
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-  
+    console.log('11')
+    var date = new Date();
+    var that = this;
+    var time = 100;
+    var timer = setInterval(function () {
+      console.log('222')
+      time = time - 0.2;
+      that.setData({
+        timeData: time
+      });
+      if (time < 0) {
+        clearInterval(timer);
+        console.log(new Date() - date);
+      }
+    }, 10);
   },
 
   /**
    * 生命周期函数--监听页面隐藏
    */
   onHide: function () {
-  
+
   },
 
   /**
