@@ -112,6 +112,9 @@ page{
 .textRed{
   color:#f96e7e;
 }
+.textGreen{
+  color:#72c900;
+}
 /* 字体加粗 */
 .bold{
   font-weight:bold;

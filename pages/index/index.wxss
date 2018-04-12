@@ -67,6 +67,37 @@
 .tab-content{
   padding:25rpx 35rpx;
 }
+.prize-get{
+  border:2rpx #b77bf2 solid;
+  box-sizing: border-box;
+   border-radius: 10rpx;
+    background:#b77bf2;
+}
+.prize-top{
+ height:130rpx;
+ padding:0 25rpx;
+}
+.prize-btn{
+  background: linear-gradient(to right, #f98c7d, #f92a82);
+  width:196rpx;
+  height:72rpx;
+  border-radius: 336rpx;
+  border:2rpx #fff solid;
+  margin:0;
+}
+.prize-bot{
+  line-height:60rpx;
+}
+.safe-icon{
+  width:35rpx;
+  height:40rpx;
+}
+.marquee-container{
+  border-radius: 10rpx;
+  overflow:hidden;
+  margin-top:25rpx;
+  height:300rpx;
+}
 .modal-text{
   display: flex;
   flex:1;

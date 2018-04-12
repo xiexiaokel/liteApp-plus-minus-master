@@ -25,7 +25,18 @@
         <memberList orderBy="fightNumber"></memberList>
       </block>
       <block wx:if="{{tabShow==2}}">
-        <pictureList bindgetPrize="gotoPrize"></pictureList>
+        <view class="prize-get">
+          <view class="prize-top flex flex-row flex-center flex-between">
+            <text class="ft32 textWhite">挑战成功领取奖品，包邮！</text>
+            <button class="prize-btn ft30 textWhite" bindtap="getPrize">立即领取</button>
+          </view>
+          <view class="prize-bot bg-white flex flex-center flex-row">
+            <image src="{{safeIcon}}" class="safe-icon"></image>
+            <text class="ft32 textGreen flex flex-row flex-center">平台担保，所有商品100%真实领取</text>
+          </view>
+        </view>
+        <view class="marquee-container"><marquee marqueeList="{{marqueeList}}" interval="{{interval}}" duration="{{duration}}"></marquee></view>
+        <pictureList goodsList="{{goodsList}}"></pictureList>
       </block>
     </view>
   </view>

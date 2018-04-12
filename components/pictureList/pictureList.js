@@ -6,17 +6,19 @@ Component({
    * 组件的属性列表
    */
   properties: {
-
+    goodsList:{
+      type:Array
+    },
+    hasBtn:{
+      type:Boolean
+    }
   },
 
   /**
    * 组件的初始数据
    */
   data: {
-    prizeList:[
-      {text:'小灰灰',picture:`${imgHost}/images/prize.png`},
-      { text: '小拜拜白白', picture: `${imgHost}/images/prize.png` }
-    ]
+    goodsList:[]
   },
 
   /**

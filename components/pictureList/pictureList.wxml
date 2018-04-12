@@ -1,11 +1,26 @@
 <!--components/pictureList/pictureList.wxml-->
-<view class="prize-list">
-  <view class="prize-top flex flex-row flex-center flex-between">
-    <text class="ft32 textRed">挑战成功领取娃娃</text>
-    <button class="prize-btn ft30 textWhite" bindtap="getPrize">立即领取</button>
-  </view>
-  <view class="prize-item flex flex-col flex-center" wx:for="{{prizeList}}" wx:key="{{index}}">
-    <image src="{{item.picture}}" class="prize-img"></image>
-    <text class="prize-title ft30 textBlack">{{item.text}}</text>
+<view class="goods-list">
+  <view class="goods-item flex flex-row flex-center flex-start" wx:for="{{goodsList}}" wx:key="{{index}}">
+    <image src="{{item.picture}}" class="goods-img"></image>
+    <view class="goods-text">
+      <text class="goods-title ft30 textBlack">{{item.name}}</text>
+      <view class="goods-price">
+        <text class="ft28 textGray">市场价格：</text>
+        <text class="ft36 textRed">{{item.price}}</text>
+      </view>
+      <view class="goods-limit flex flex-center flex-between">
+        <view>
+          <text class="ft28 textGray">剩余</text>
+          <text class="ft28 textGray">{{item.surplus}}</text>
+          <text class="ft28 textGray">份</text>
+        </view>
+        <view>
+          <text class="ft28 textGray">限量</text>
+          <text class="ft28 textGray">{{item.limit}}</text>
+          <text class="ft28 textGray">份</text>
+        </view>
+      </view>
+    </view>
+    
   </view>
 </view>
