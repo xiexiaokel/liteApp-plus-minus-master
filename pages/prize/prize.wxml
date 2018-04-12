@@ -1,0 +1,18 @@
+<!--pages/prize/prize.wxml-->
+<scroll-view srcoll-y class="container">
+<view class="prize-tab flex flex-center flex-row">
+  <view class="tab-item" wx:for="{{tabTitleList}}" wx:key="{{index}}" bindtap="itemClick" data-key="{{item.key}}">
+    <text class="ft32 default active" wx:if="{{item.checked}}">{{item.text}}</text>
+    <text class="ft32 default" wx:else>{{item.text}}</text>
+  </view>
+</view>
+<!-- 列表 -->
+<view class="list-content">
+  <block wx:if="{{currentKey=='record'}}">
+    <pictureList goodsList="{{goodsList}}" records="{{true}}" bindaddAddress="gotoAddress"></pictureList>
+  </block>
+  <block wx:else>
+    <pictureList hasBtn="{{true}}" goodsList="{{goodsList}}" bindaddAddress="gotoAddress"></pictureList>
+  </block>
+</view>
+</scroll-view>

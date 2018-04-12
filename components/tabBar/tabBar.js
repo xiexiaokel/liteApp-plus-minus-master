@@ -4,18 +4,16 @@ Component({
    * 组件的属性列表
    */
   properties: {
-
+    tabTitleList:{
+      type:Array
+    }
   },
 
   /**
    * 组件的初始数据
    */
   data: {
-    tabTitleList: [
-      { key: "prize", text: '奖品列表', checked: true },
-      { key: "honor", text: '荣誉榜', checked: false },
-      { key: "will", text: '毅力榜', checked: false }
-    ]
+   
   },
 
   /**

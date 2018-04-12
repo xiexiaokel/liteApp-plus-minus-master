@@ -12,7 +12,7 @@
   </view>
   <view class="honor">
     <view class="pd-all tab-bar">
-      <tabBar binditemCheck="tabCheck"></tabBar>
+      <tabBar binditemCheck="tabCheck" tabTitleList="{{tabTitleList}}"></tabBar>
     </view>
     <view class="adv-box">
       <image src="{{imgAdv}}" class="adv-img"></image>

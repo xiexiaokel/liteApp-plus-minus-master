@@ -11,6 +11,9 @@ Component({
     },
     hasBtn:{
       type:Boolean
+    },
+    records:{
+      type:Boolean
     }
   },
 
@@ -27,6 +30,9 @@ Component({
   methods: {
     getPrize:function(){
       this.triggerEvent('getPrize');
+    },
+    addAddress:function(){
+      this.triggerEvent('addAddress');
     }
   }
 })

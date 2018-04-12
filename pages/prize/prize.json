@@ -1,0 +1,5 @@
+{
+  "usingComponents":{
+    "pictureList":"../../components/pictureList/pictureList"
+  }
+}

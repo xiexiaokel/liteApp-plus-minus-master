@@ -1,0 +1,29 @@
+<!--pages/address/address.wxml-->
+<view class="container">
+  <view class="address-box">
+    <text class="address-title textBlack ft36">填写收货地址</text>
+    <view class="address-item flex flex-center flex-start flex-row">
+      <text class="ft32 textBlack">收货人：</text>
+      <input placeholder='请输入收货人姓名' value="{{nameInputValue}}" placeholder-class='place-class' bindinput='nameInputValue'></input>
+    </view>
+    <view class="address-item flex flex-center flex-start flex-row">
+      <text class="ft32 textBlack">手机号码：</text>
+      <input placeholder='请输入手机号码' value="{{phoneInputValue}}" placeholder-class='place-class' bindinput='phoneInputValue'></input>
+    </view>
+    <view class="address-select">
+      <text class="ft32 textBlack select-title">选择地区：</text>
+      <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+        <view class="flex flex-center flex-start">
+          <text class="picker-item">{{region[0]}}</text>
+          <text class="picker-item">{{region[1]}}</text>
+          <text class="picker-item">{{region[2]}}</text>
+        </view>
+      </picker>
+    </view>
+    <view class="address-select">
+      <text class="ft32 textBlack select-title">详细地址：</text>
+       <textarea placeholder="接到楼牌号等" placeholder-class='place-class' class="area-style" />
+    </view>
+    <view class="address-submit">提交</view>
+  </view>
+</view>

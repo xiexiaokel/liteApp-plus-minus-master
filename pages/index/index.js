@@ -15,6 +15,11 @@ Page({
     tabShow: 2,//控制首页tab卡默认显示内容
     showModal: false,//控制大弹窗显示隐藏
     showPop: false,//控制开始按钮小弹窗显示
+    tabTitleList: [//tab分类
+      { key: "prize", text: '奖品列表', checked: true },
+      { key: "honor", text: '荣誉榜', checked: false },
+      { key: "will", text: '毅力榜', checked: false }
+    ],
     marqueeList:
     [{ id: '1', goods: 'YSL圣罗兰方管正红色52', nickName: '小灰灰', time: '2018-04-12 15:34' },
     { id: '2', goods: 'YSL圣罗兰方管正红色52', nickName: '小灰灰', time: '2018-04-12 15:34' },
@@ -47,6 +52,11 @@ Page({
   },
   invitedFriend: function () {
     console.log('邀请朋友事件方法')
+  },
+  getPrize:function(){
+    wx.navigateTo({
+      url: '../prize/prize',
+    })
   },
   tabCheck: function (e) {
     switch (e.detail.key) {

@@ -19,5 +19,17 @@
   flex-flow: column;
   padding:0 25rpx;
 }
-.goods-title{
+.goods-limit{
+  position: relative;
+}
+.btn{
+ width:96rpx;
+ height:56rpx;
+ background:#7e62f8;
+ color:#fff;
+ font-size:32rpx;
+ line-height: 56rpx;
+ text-align: center;
+ border-top-left-radius: 10rpx;
+ border-bottom-right-radius: 10rpx;
 }

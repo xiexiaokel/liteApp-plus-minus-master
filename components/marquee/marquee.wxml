@@ -1,6 +1,6 @@
 <!--components/marquee/marquee.wxml-->
 <swiper autoplay="{{true}}" interval="{{interval}}" duration="{{duration}}" vertical="{{true}}" display-multiple-items="3" class="marquee-box bg-white">
-  <swiper-item wx:for="{{marqueeList}}" class="marquee-item">
+  <swiper-item wx:for="{{marqueeList}}" class="marquee-item" wx:key="{{item.id}}">
       <text class="ft28 textGray">{{item.time}}</text>
       <text class="ft28 textGray">分{{item.nickName}}开关 用户成功领取 {{item.goods}}</text>
   </swiper-item>
