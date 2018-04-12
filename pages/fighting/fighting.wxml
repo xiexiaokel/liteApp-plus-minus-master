@@ -1,5 +1,6 @@
 <view class="fight-container">
-  <view class="fight-content">
+  <view class="cutdown" animation="{{animationData}}">{{count}}</view>
+  <!-- <view class="fight-content">
     <view class="flex flex-center">
       <text class="fight-title">连续答对{{qaNumber}}题即挑战成功</text>
     </view>
@@ -18,5 +19,5 @@
         <image src="{{rightIcon}}" class="img-btn"></image>
         <image src="{{wrongIcon}}" class="img-btn"></image>
     </view>
-  </view>
+  </view> -->
 </view>

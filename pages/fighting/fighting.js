@@ -10,6 +10,8 @@ Page({
     musicIcon:`${imgHost}/images/music.png`,
     rightIcon:`${imgHost}/images/right.png`,
     wrongIcon: `${imgHost}/images/wrong.png`,
+    count:3,
+    animationData:{},
     timeData:100,
     qaNumber:'40',
     qaList:[
@@ -32,17 +34,37 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-    const {qaList} = this.data;
-    this.setData({
-      currentQa:qaList[0]
-    })
   },
 
   /**
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    console.log('11')
+    // 游戏开始倒计时
+    let animation = wx.createAnimation({
+      duration: 1000,
+      timingFunction: 'ease',
+    })
+
+    this.animation = animation
+    let count = 4;
+    let cutdown = setInterval(() => {
+      animation.scale(10, 10).step()
+      console.log(22);
+      count = count - 1;
+      this.setData({
+        count: count,
+        animationData: animation.export()
+      })
+      if (count < 1) {
+        clearInterval(cutdown);
+      }
+    }, 1000)
+    const { qaList } = this.data;
+    this.setData({
+      currentQa: qaList[0]
+    })
+    //游戏答题倒计时
     var date = new Date();
     var that = this;
     var time = 100;

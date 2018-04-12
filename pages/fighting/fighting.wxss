@@ -85,3 +85,19 @@
   height:334rpx;
   margin:0 10rpx;
 }
+.textWhite{
+  font-weight: bold;
+}
+.cutdown{
+  position: absolute;
+  z-index: 22;
+  left:0;
+  right:0;
+  height:800rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:#fff;
+  font-weight:bold;
+  font-size:250rpx;
+}
