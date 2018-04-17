@@ -4,27 +4,31 @@ Component({
    * 组件的属性列表
    */
   properties: {
-    showModal:{
-      type:Boolean
+    showAlert: {
+      type: Boolean
     },
     height:{
-      type:String,
+      type:String
+    },
+    bgColor:{
+      type:String
     },
   },
+
   /**
    * 组件的初始数据
    */
   data: {
-    showModal:true
+    showModal: true
   },
 
   /**
    * 组件的方法列表
    */
   methods: {
-    closeModal:function(){
+    closeModal: function () {
       this.setData({
-        showModal:false
+        showAlert: false
       })
     }
   }

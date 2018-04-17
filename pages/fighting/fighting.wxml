@@ -1,23 +1,58 @@
 <view class="fight-container">
-  <view class="cutdown" animation="{{animationData}}">{{count}}</view>
-  <!-- <view class="fight-content">
+  <view class="cutdown" wx:if="{{isStart == false}}">
+    <text animation="{{animationData}}" class="animation-text">{{count}}</text>
+  </view>
+  <view class="rule" wx:if="{{isStart==false}}">
+    <text class="ft60 textWhite">挑战规则</text>
+    <text class="ft40 textWhite">连续答对40题即挑战成功</text>
+  </view>
+  <view class="fight-content" wx:if="{{isStart == true}}">
     <view class="flex flex-center">
       <text class="fight-title">连续答对{{qaNumber}}题即挑战成功</text>
     </view>
     <view class="progress-box">
-      <view class="progress-mask" style="width:{{timeData}}%"> 
-      </view> 
-       <progress percent="{{timeData}}" activeColor='#3d1d99' backgroundColor="#3d1d99" stroke-width="24"/>
+      <view class="progress-mask" style="width:{{timeData}}%">
+      </view>
+      <progress percent="{{timeData}}" activeColor='#3d1d99' backgroundColor="#3d1d99" stroke-width="24" />
     </view>
     <view class="qa-content flex flex-col flex-center flex-start">
-        <text class="ft48 textWhite">第1题</text>
-        <text class="ft150 textWhite">{{currentQa.startNum}}-{{currentQa.endNum}}</text> 
-        <text class="ft150 textWhite">={{currentQa.result}}</text>
-        <image class="music-icon" src="{{musicIcon}}"></image>  
+      <text class="ft48 textWhite">第{{currentQa.id}}题</text>
+      <text class="ft150 textWhite">{{currentQa.startNum}}-{{currentQa.endNum}}</text>
+      <text class="ft150 textWhite">={{currentQa.result}}</text>
+      <image class="music-icon" src="{{musicIcon}}"></image>
     </view>
     <view class="btn-group flex flex-row flex-center flex-around">
-        <image src="{{rightIcon}}" class="img-btn"></image>
-        <image src="{{wrongIcon}}" class="img-btn"></image>
+      <button class="right-btn" data-value="1" bindtap="answerQuest" hover-class='btn-active'>
+        <view class="shadow">
+          <image src="{{rightIcon}}" class="right-icon"></image>
+        </view>
+      </button>
+      <button class="wrong-btn" data-value="0" bindtap="answerQuest" hover-class='btn-active'>
+        <view class="shadow">
+          <image src="{{wrongIcon}}" class="wrong-icon"></image>
+        </view>
+      </button>
     </view>
-  </view> -->
+  </view>
+  <block wx:if="{{answer}}">
+    <!-- 挑战成功弹窗 -->
+    <popAlert showAlert="{{true}}" height="891" bgColor="none">
+      <view class="success-content">
+        <image src="{{successImg}}" class="success-img"></image>
+        <image src="{{successBtn}}" class="success-btn" bindtap="getPrize"></image>
+      </view>
+    </popAlert>
+  </block>
+  <block wx:else>
+    <!-- 挑战失败弹窗 -->
+    <popAlert showAlert="{{showAlert}}" height="150">
+      <view class="alert-content">
+        <image src="{{alertIcon}}" class="alert-icon"></image>
+        <view class="flex flex-col flex-start">
+          <text class="ft32 textBlack">差一点就能成功了</text>
+          <text class="ft24 textGray">加油，你可以的</text>
+        </view>
+      </view>
+    </popAlert>
+  </block>
 </view>

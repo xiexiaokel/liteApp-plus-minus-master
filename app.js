@@ -4,6 +4,6 @@ App({
   },
   globalData: {
     //imgHost: 'https://duokeyun.oss-cn-qingdao.aliyuncs.com/wechat/dk',
-    imgHost:'../..'
+    imgHost: 'https://duokeyun.oss-cn-qingdao.aliyuncs.com/wechat/wxapp/plus_minus'
   }
 })

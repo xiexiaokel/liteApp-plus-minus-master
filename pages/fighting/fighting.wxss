@@ -9,7 +9,7 @@
   display:block;
   content: '';
   width:100%;
-  height:785rpx;
+  height:750rpx;
   position: absolute;
   background:#764cae;
   border-bottom-left-radius: 40rpx;
@@ -20,7 +20,7 @@
   display:block;
   content: '';
   width:100%;
-  height:770rpx;
+  height:735rpx;
   position: absolute;
   background: linear-gradient(to bottom, #4b2ec8, #ba7df3);
   z-index: 10;
@@ -57,18 +57,18 @@
   overflow:hidden;
   border-radius: 24rpx;
   /* background-image:url('../../images/progress-bar.png'); */
-  background-image:url('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1524052669&di=335c409422bf0e15bbc86e9f9aa88691&imgtype=jpg&er=1&src=http%3A%2F%2Ff10.topitme.com%2Fo%2F201101%2F29%2F12962453326647.jpg');
+  background-image:url('https://duokeyun.oss-cn-qingdao.aliyuncs.com/wechat/wxapp/plus_minus/images/progress_bar.png');
   background-repeat:  repeat-x;
   background-size:auto 100%;
 }
 .qa-content{
-  height:630rpx; 
+  height:560rpx; 
   position: relative;
 }
 .music-icon{
   position: absolute;
   right:0rpx;
-  bottom:70rpx;
+  bottom:30rpx;
   width:63rpx;
   height:63rpx;
 }
@@ -80,10 +80,62 @@
   font-size:150rpx;
   line-height: 150rpx;
 }
-.img-btn{
-  width:334rpx;
-  height:334rpx;
-  margin:0 10rpx;
+.right-btn,.wrong-btn{
+  width:310rpx;
+  height:310rpx;
+  overflow:hidden;
+  margin:10rpx;
+  padding:0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40rpx;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 9;
+}
+.right-btn{
+  background:#3886b7;
+}
+.right-btn .shadow{
+  position: absolute;
+  left:0;
+  top:-6rpx;
+  width:310rpx;
+  height:310rpx;
+  z-index: 10;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  background:#57d9fe;
+  border-radius: 40rpx;
+}
+.wrong-btn{
+  background:#a5435a;
+}
+.wrong-btn .shadow{
+  position: absolute;
+  left:0;
+  top:-6rpx;
+  width:310rpx;
+  height:310rpx;
+  z-index: 10;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  background:#ff6c7d;
+  border-radius: 40rpx;
+}
+.btn-active{
+  border:6rpx #fff solid;
+}
+.right-icon{
+  width:234rpx;
+  height:178rpx;
+}
+.wrong-icon{
+  width:174rpx;
+  height:174rpx;
 }
 .textWhite{
   font-weight: bold;
@@ -92,12 +144,69 @@
   position: absolute;
   z-index: 22;
   left:0;
+  top:0;
   right:0;
   height:800rpx;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.animation-text{
   color:#fff;
-  font-weight:bold;
   font-size:250rpx;
+  font-weight: bold;
+}
+.rule{
+  position: absolute;
+  left:0;
+  bottom:0;
+  right:0;
+  z-index: 23;
+  height:400rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.ft40{
+  line-height: 80rpx;
+}
+.alert-content{
+  position: absolute;
+  left:0;
+  right:0;
+  bottom:0;
+  top:0;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  padding:0 35rpx;
+}
+.alert-icon{
+  width:172rpx;
+  height:173rpx;
+  margin-right:10rpx;
+  margin-top:-30rpx;
+}
+.success-content{
+  position: absolute;
+  left:0;
+  top:0;
+  right:0;
+  bottom:0;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+.success-img{
+  width:602rpx;
+  height:666rpx;
+}
+.success-btn{
+  width:412rpx;
+  height:110rpx;
+  margin-top:10rpx;
 }

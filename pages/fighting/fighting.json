@@ -1,5 +1,6 @@
 {
   "usingComponents": {
-    "botNav": "../../components/botNav/botNav"
+    "botNav": "../../components/botNav/botNav",
+    "popAlert":"../../components/popAlert/popAlert"
   }
 }

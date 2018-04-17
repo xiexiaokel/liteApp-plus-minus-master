@@ -87,6 +87,9 @@ page{
 .ft56{
   font-size:56rpx;
 }
+.ft60{
+  font-size:60rpx;
+}
 .ft72{
   font-size:72rpx;
 }
