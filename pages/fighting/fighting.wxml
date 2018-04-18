@@ -45,7 +45,7 @@
   </block>
   <block wx:else>
     <!-- 挑战失败弹窗 -->
-    <popAlert showAlert="{{showAlert}}" height="150">
+    <popAlert showAlert="{{showAlert}}" height="150" bindcloseModal="directEvent">
       <view class="alert-content">
         <image src="{{alertIcon}}" class="alert-icon"></image>
         <view class="flex flex-col flex-start">

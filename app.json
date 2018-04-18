@@ -1,7 +1,7 @@
 {
   "pages": [
-    "pages/fighting/fighting",
     "pages/index/index",
+    "pages/fighting/fighting",
     "pages/prize/prize",
     "pages/address/address",
     "pages/complanit/complanit",

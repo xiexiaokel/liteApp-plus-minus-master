@@ -12,7 +12,7 @@ Component({
     },
     bgColor:{
       type:String
-    },
+    }
   },
 
   /**
@@ -29,7 +29,8 @@ Component({
     closeModal: function () {
       this.setData({
         showAlert: false
-      })
+      });
+      this.triggerEvent('closeModal');
     }
   }
 })

@@ -39,6 +39,13 @@ Page({
       url: '../prize/prize',
     })
   },
+  //页面跳转
+  directEvent: function () {
+    console.log('1111')
+    wx.navigateBack({
+      delta:1
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
